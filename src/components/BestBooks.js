@@ -30,7 +30,7 @@ class BestBooks extends React.Component {
     }
 
     render() {
-        this.getBooks();
+        // this.getBooks();
         console.log(this.state.books);
         let books = this.state.books.map((book) => (
             <p key={book._id}>
