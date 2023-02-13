@@ -1,13 +1,14 @@
 
 import React from 'react';
 // import axios from "axios";
-import './App.css';
+import './Home.css';
 import Header from './components/Header.js';
 import BestBooks from './components/BestBooks.js';
 
 
 
-class App extends React.Component {
+
+class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,7 +19,7 @@ class App extends React.Component {
     return (
       <>
 
-  <Header/>
+    <Header/>
         <BestBooks />
 
       </>
@@ -26,4 +27,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Home;
