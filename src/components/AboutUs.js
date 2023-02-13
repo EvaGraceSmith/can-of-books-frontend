@@ -17,6 +17,10 @@ class AboutUs extends React.Component {
             <>
                 <main>
                     <h1>About Us</h1>
+                    <h2>Chris Vander Linden</h2>
+                    <h3>Software Developer</h3>
+                    <h2>Eva Grace Smith</h2>
+                    <h3>Software Developer</h3>
                 </main>
             </>
         );

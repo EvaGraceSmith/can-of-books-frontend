@@ -1,7 +1,8 @@
 import React from 'react';
 // import axios from 'axios';
 // import Carousel from 'react-bootstrap/Carousel';
-import { Outlet, Link } from "react-router-dom";
+import { Navbar, NavItem } from 'react-bootstrap';
+import { Outlet, Link } from 'react-router-dom';
 import './Header.css';
 
 
@@ -21,13 +22,13 @@ class Header extends React.Component {
                   <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to='/'>Home</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/blogs">Blogs</Link>
-          </li>
+          </li> */}
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to='/AboutUs'>About Us</Link>
           </li>
         </ul>
       </nav>

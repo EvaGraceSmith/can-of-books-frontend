@@ -12,7 +12,7 @@ class BestBooks extends React.Component {
         this.state = {
             books: [],
             error: false,
-            errorMessage: "",
+            errorMessage: '',
         };
     }
 
