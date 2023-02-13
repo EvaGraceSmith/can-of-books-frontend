@@ -3,7 +3,7 @@ import React from 'react';
 // import Carousel from 'react-bootstrap/Carousel';
 import './AboutUs.css';
 
-class AboutUs extends React.Component {
+class Profile extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -21,6 +21,7 @@ class AboutUs extends React.Component {
                     <h3>Software Developer</h3>
                     <h2>Eva Grace Smith</h2>
                     <h3>Software Developer</h3>
+
                 </main>
             </>
         );
@@ -28,4 +29,4 @@ class AboutUs extends React.Component {
     }
 }
 
-export default AboutUs;
+export default Profile;
