@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import Carousel from 'react-bootstrap/Carousel';
 
 // import ListGroup from 'react-bootstrap/ListGroup';
 let SERVER = process.env.REACT_APP_SERVER;
@@ -30,17 +31,44 @@ class BestBooks extends React.Component {
     }
 
     render() {
-        // this.getBooks();
+ 
         console.log(this.state.books);
+
         let books = this.state.books.map((book) => (
-            <p key={book._id}>
-                {book.title} is about {book.description}
-            </p>
+
+
+        
+      <Carousel.Item key={book._id}>
+        <img
+          className="d-block w-100"
+          src={require('../img/books-5937823_640.jpg')}
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>{book.title}</h3>
+          <p>{book.description}</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+     
+
+
+
+            // <p key={book._id}>
+            //     {book.title} is about {book.description}
+            // </p>
         ));
         return (
             <>
-
-                <main>{this.state.books.length > 0 && <>{books}</>}</main>
+           
+                <main>{
+                this.state.books.length > 0 && 
+                <>
+                <Carousel fade>
+                {books}
+                </Carousel>
+                </>
+                }   
+                </main>
 
             </>
         );
