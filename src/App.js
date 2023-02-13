@@ -20,9 +20,8 @@ class App extends React.Component {
           <h1> Books and More Books!</h1>
 
         </header>
-        <main>
+  
         <BestBooks />
-        </main>
 
       </>
     );

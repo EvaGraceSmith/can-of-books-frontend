@@ -11,6 +11,8 @@ class BestBooks extends React.Component {
         super(props);
         this.state = {
             books: [],
+            error: false,
+            errorMessage: "",
         };
     }
 
@@ -21,6 +23,7 @@ class BestBooks extends React.Component {
             console.log('do we have books', results);
             this.setState({
                 books: results.data,
+                error: false,
             });
         } catch (error) {
             console.log('empty book collection: ', error.response.data);
@@ -61,15 +64,18 @@ class BestBooks extends React.Component {
         return (
             <>
 
-                <main>{
-                    this.state.books.length > 0 &&
+                <main>
+                    {(this.state.error) &&
+                        <Alert key='info' variant='info' show="true" transition="false" >The book collection is empty {this.state.errorMessage} </Alert>
+                      }
+                    {this.state.books.length > 0 &&
                     <>
                         <Carousel fade
                             className="carousel">
                             {books}
                         </Carousel>
                     </>
-                }
+    }
                 </main>
 
             </>
