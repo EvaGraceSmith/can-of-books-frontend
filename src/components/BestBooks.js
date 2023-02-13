@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Carousel from 'react-bootstrap/Carousel';
+import './BestBooks.css';
 
 // import ListGroup from 'react-bootstrap/ListGroup';
 let SERVER = process.env.REACT_APP_SERVER;
@@ -22,7 +23,12 @@ class BestBooks extends React.Component {
                 books: results.data,
             });
         } catch (error) {
-            console.log('we have an error: ', error.response.data);
+            console.log('empty book collection: ', error.response.data);
+            this.setState({
+                error: true,
+                errorMessage: `The book collection is empty: ${error.response.status}`,
+              });
+              console.error(error);
         }
     };
 
@@ -31,43 +37,39 @@ class BestBooks extends React.Component {
     }
 
     render() {
- 
+
         console.log(this.state.books);
 
         let books = this.state.books.map((book) => (
 
+            <Carousel.Item key={book._id}>
 
-        
-      <Carousel.Item key={book._id}>
-        <img
-          className="d-block w-100"
-          src={require('../img/books-5937823_640.jpg')}
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>{book.title}</h3>
-          <p>{book.description}</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-     
+                <img
+                    className="d-block w-100"
+                    src={require('../img/literature-3197260_640.jpg')}
+                    alt="First slide"
+                />
+                <Carousel.Caption>
+                    <h3>{book.title}</h3>
+                    <p>{book.description}</p>
+                </Carousel.Caption>
 
-
-
-            // <p key={book._id}>
-            //     {book.title} is about {book.description}
-            // </p>
+            </Carousel.Item>
         ));
+
+
         return (
             <>
-           
+
                 <main>{
-                this.state.books.length > 0 && 
-                <>
-                <Carousel fade>
-                {books}
-                </Carousel>
-                </>
-                }   
+                    this.state.books.length > 0 &&
+                    <>
+                        <Carousel fade
+                            className="carousel">
+                            {books}
+                        </Carousel>
+                    </>
+                }
                 </main>
 
             </>

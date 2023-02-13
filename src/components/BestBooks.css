@@ -1,0 +1,18 @@
+main {
+    background-image: url('../img/dublin-2344423_1920.jpg');
+  }
+
+
+.carousel{
+    color: white;
+}
+
+h3{
+    color: white;
+    /* text-align: right; */
+}
+
+p{
+    color: white;
+    /* text-align: right; */
+}

@@ -23,8 +23,10 @@
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped 
 Image by <a href="https://pixabay.com/users/hermann-130146/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5937823">Hermann Traub</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5937823">Pixabay</a>
-
-
+Image by <a href="https://pixabay.com/users/skitterphoto-324082/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2344423">Rudy and Peter Skitterians</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2344423">Pixabay</a>
+Image by <a href="https://pixabay.com/users/fotoblend-87167/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4032668">Willfried Wende</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4032668">Pixabay</a>
+Image by <a href="https://pixabay.com/users/moritz320-1260270/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3330647">günter</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3330647">Pixabay</a>
+Image by <a href="https://pixabay.com/users/fernandozhiminaicela-6246704/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3197260">fernando zhiminaicela</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3197260">Pixabay</a>
 
 # Start your own "Can of Books" App
 
