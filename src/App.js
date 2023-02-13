@@ -2,6 +2,7 @@
 import React from 'react';
 // import axios from "axios";
 import './App.css';
+import Header from './components/Header.js';
 import BestBooks from './components/BestBooks.js';
 
 
@@ -16,11 +17,8 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <header>
-          <h1> Books and More Books!</h1>
 
-        </header>
-  
+  <Header/>
         <BestBooks />
 
       </>
