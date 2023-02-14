@@ -1,7 +1,7 @@
 import React from 'react';
 // import axios from 'axios';
 // import Carousel from 'react-bootstrap/Carousel';
-import './AboutUs.css';
+import './About.css';
 
 class Profile extends React.Component {
     constructor(props) {
@@ -15,6 +15,7 @@ class Profile extends React.Component {
     render() {
         return (
             <>
+                  <a href = '/'>Home</a>
                 <main>
                     <h1>About Us</h1>
                     <h2>Chris Vander Linden</h2>

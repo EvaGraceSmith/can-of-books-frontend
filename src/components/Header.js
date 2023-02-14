@@ -1,18 +1,28 @@
 import React from 'react';
-import { Navbar, NavItem } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Navbar, Nav } from 'react-bootstrap';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
+// import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
 
 class Header extends React.Component {
-  render() {
-    return (
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand>My Favorite Books</Navbar.Brand>
-        <NavItem ><Link to="/" className="nav-link" title="Home">Home</Link></NavItem>
-        <NavItem><Link to="/About" className="nav-link">About Us</Link></NavItem>
-        {/* PLACEHOLDER: render a navigation link to the about page */}
-      </Navbar>
+    render() {
+        return (
+            <Navbar bg="dark" variant="dark">
+                <Container>
+                    <Navbar.Brand href='/'>My Favorite Books</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Nav className="me-auto">
+                        <Nav.Link href='/'>Home</Nav.Link>
+                        <Nav.Link href='/about'>About Us</Nav.Link>
+                    </Nav>
+
+            </Container>
+    </Navbar >
+
+
+
     );
-  }
+    }
 }
 
 export default Header;
@@ -20,11 +30,10 @@ export default Header;
 
 
 
-
-
-
-
-
+    //     <NavItem ><Link to="/" className="nav-link" title="Home">Home</Link></NavItem>
+    //     <NavItem><Link to="/About" className="nav-link">About Us</Link></NavItem>
+    //     {/* PLACEHOLDER: render a navigation link to the about page */ }
+    //   </Navbar >
 
 
 

@@ -2,6 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import Carousel from 'react-bootstrap/Carousel';
 import './BestBooks.css';
+import Alert from 'react-bootstrap/Alert';
+
 
 // import ListGroup from 'react-bootstrap/ListGroup';
 let SERVER = process.env.REACT_APP_SERVER;
@@ -63,7 +65,7 @@ class BestBooks extends React.Component {
 
         return (
             <>
-<h2>“I guess there are never enough books.” -John Steinbeck</h2>
+
                     {(this.state.error) &&
                         <Alert key='info' variant='info' show="true" transition="false" >The book collection is empty {this.state.errorMessage} </Alert>
                       }
