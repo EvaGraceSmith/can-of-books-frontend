@@ -30,22 +30,6 @@ class App extends React.Component {
             </Route>
           </Routes>
 
-        {/* I think this might work...
-        <Router>
-          <Header />
-          <Routes>
-              <Route exact path={"/"}>
-                <BestBooks/>
-              </Route>
-              <Route exact path={"/about"}>
-                <About />
-              </Route>
-          </Routes>
-          
-          <Footer />
-        </Router>
-        */}
-
           <BestBooks />
           <Footer />
         </Router>
@@ -53,19 +37,6 @@ class App extends React.Component {
     );
   }
 }
-
-
-
-{/* <Route
-exact path="/"
-element={<BestBooks />}
->
-</Route>
-<Route
-exact path="/"
-element={<About />}
->
-</Route> */}
 
 
 export default App;
