@@ -29,6 +29,23 @@ class App extends React.Component {
               <Route path="About" element={<About />} />
             </Route>
           </Routes>
+
+        {/* I think this might work...
+        <Router>
+          <Header />
+          <Routes>
+              <Route exact path={"/"}>
+                <BestBooks/>
+              </Route>
+              <Route exact path={"/about"}>
+                <About />
+              </Route>
+          </Routes>
+          
+          <Footer />
+        </Router>
+        */}
+
           <BestBooks />
           <Footer />
         </Router>
