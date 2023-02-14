@@ -2,7 +2,12 @@
 import React from 'react';
 // import axios from "axios";
 import './App.css';
+import Header from './components/Header.js';
+import Footer from './components/Footer.js';
 import BestBooks from './components/BestBooks.js';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import About from './components/About.js';
+
 
 
 
@@ -16,14 +21,51 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <header>
-          <h1> Books and More Books!</h1>
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Header />}>
+              <Route index element={<App />} />
+              <Route path="About" element={<About />} />
+            </Route>
+          </Routes>
 
-        </header>
-        <BestBooks />
+        {/* I think this might work...
+        <Router>
+          <Header />
+          <Routes>
+              <Route exact path={"/"}>
+                <BestBooks/>
+              </Route>
+              <Route exact path={"/about"}>
+                <About />
+              </Route>
+          </Routes>
+          
+          <Footer />
+        </Router>
+        */}
+
+          <BestBooks />
+          <Footer />
+        </Router>
       </>
     );
   }
 }
+
+
+
+{/* <Route
+exact path="/"
+element={<BestBooks />}
+>
+</Route>
+<Route
+exact path="/"
+element={<About />}
+>
+</Route> */}
+
 
 export default App;
