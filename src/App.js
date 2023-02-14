@@ -24,18 +24,12 @@ class App extends React.Component {
         <Router>
           <Header />
           <Routes>
-            <Route
-              exact path="/"
-              element={<BestBooks />}
-            >
+            <Route path="/" element={<Header />}>
+              <Route index element={<App />} />
+              <Route path="About" element={<About />} />
             </Route>
-            <Route
-              exact path="/"
-              element={<About />}
-            >
-            </Route>
-
           </Routes>
+          <BestBooks />
           <Footer />
         </Router>
       </>
@@ -43,11 +37,18 @@ class App extends React.Component {
   }
 }
 
-{/* <Route path="/" element={<Header />}>
-<Route index element={<App/>} />
-<Route path="AboutUs" element={<AboutUs />} />
-</Route> */}
 
+
+{/* <Route
+exact path="/"
+element={<BestBooks />}
+>
+</Route>
+<Route
+exact path="/"
+element={<About />}
+>
+</Route> */}
 
 
 export default App;

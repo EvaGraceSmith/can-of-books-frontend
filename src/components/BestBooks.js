@@ -63,8 +63,7 @@ class BestBooks extends React.Component {
 
         return (
             <>
-
-                <main>
+<h2>“I guess there are never enough books.” -John Steinbeck</h2>
                     {(this.state.error) &&
                         <Alert key='info' variant='info' show="true" transition="false" >The book collection is empty {this.state.errorMessage} </Alert>
                       }
@@ -76,7 +75,6 @@ class BestBooks extends React.Component {
                         </Carousel>
                     </>
     }
-                </main>
 
             </>
         );
