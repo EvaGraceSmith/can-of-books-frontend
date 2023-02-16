@@ -17,7 +17,7 @@ class Profile extends React.Component {
     render() {
         return (
             <>
-                <a href='/'>Home</a>
+                {/* <a href='/'>Home</a> */}
                 <main>
                     <Header />
 
