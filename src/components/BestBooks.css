@@ -4,15 +4,17 @@ main {
 
 
 .carousel{
-    color: white;
+    color: black;
 }
 
 h3{
-    color: white;
+    text-align: left;
+    color: black;
     /* text-align: right; */
 }
 
 p{
-    color: white;
+    text-align: left;
+    color: black;
     /* text-align: right; */
 }
