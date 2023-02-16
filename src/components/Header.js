@@ -2,14 +2,22 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 // import { Link } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-
+import { Container } from 'react-bootstrap';
+// import Image from 'react-bootstrap/Image';
 
 class Header extends React.Component {
     render() {
         return (
+
             <Navbar bg="dark" variant="dark">
                 <Container>
+                    <img
+                        src={require('../img/pngaaa.com-1220636.png')}
+                        width='50'
+                        height='50'
+                        className="d-inline-block align-top"
+                        alt="Books logo"
+                    />
                     <Navbar.Brand href='/'>My Favorite Books</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Nav className="me-auto">
@@ -17,12 +25,13 @@ class Header extends React.Component {
                         <Nav.Link href='/about'>About Us</Nav.Link>
                     </Nav>
 
-            </Container>
-    </Navbar >
+                </Container>
+            </Navbar >
 
 
 
-    );
+
+        );
     }
 }
 
