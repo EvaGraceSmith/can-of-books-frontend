@@ -5,7 +5,7 @@ import './App.css';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import BestBooks from './components/BestBooks.js';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import About from './components/About.js';
 
 
@@ -21,8 +21,8 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Router>
-          <Header />
+        {/* <Router> */}
+          {/* <Header /> */}
           <Routes>
             <Route path="/" element={<Header />}>
               <Route index element={<App />} />
@@ -32,7 +32,7 @@ class App extends React.Component {
 
           <BestBooks />
           <Footer />
-        </Router>
+        {/* </Router> */}
       </>
     );
   }
