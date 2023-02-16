@@ -49,7 +49,7 @@ Finish time: _____
 Actual time needed to complete: _____
 
 ## Credit and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped 
+
 Image by <a href="https://pixabay.com/users/hermann-130146/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5937823">Hermann Traub</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5937823">Pixabay</a>
 Image by <a href="https://pixabay.com/users/skitterphoto-324082/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2344423">Rudy and Peter Skitterians</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2344423">Pixabay</a>
 Image by <a href="https://pixabay.com/users/fotoblend-87167/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4032668">Willfried Wende</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4032668">Pixabay</a>
@@ -60,14 +60,4 @@ Image by <a href="https://pixabay.com/users/trixieliko-5446132/?utm_source=link-
 Lab 11
 [React Router](https://www.w3schools.com/react/react_router.asp)
 [Intro to React Router](https://medium.com/@ipenywis/intro-to-react-router-for-beginners-multiple-page-apps-461f4729bd3f#:~:text=For%20a%20website%20or%20a%20simple%20multi-page%20app%2C,redirect%20from%20route%20to%20another%20and%20404%20pages.)
-# Start your own "Can of Books" App
 
-This repository has starter code to begin work on creating your own online bookshelf.
-
-## What can books do?
-
-Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. Build out this code base to create an web app to track what books have impacted you, and what's recommended to read next.
-
-## Use this template
-
-Clone this repo to your own account with the green "Use this template" button. Then, add any collaborators. Now you are ready to start adding features! Deploy your site to let the world know which books have had the greatest impact on you, and what's recommended. Enjoy!
