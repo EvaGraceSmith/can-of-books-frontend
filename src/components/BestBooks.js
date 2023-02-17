@@ -51,7 +51,7 @@ class BestBooks extends React.Component {
 
                 <img
                     className="d-block w-100"
-                    src={require('../img/literature-3197260_640.jpg')}
+                    src={require('../img/books-5937823_640.jpg')}
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -72,6 +72,7 @@ class BestBooks extends React.Component {
                     {this.state.books.length > 0 &&
                     <>
                         <Carousel fade
+                        variant="dark"
                             className="carousel">
                             {books}
                         </Carousel>
