@@ -4,6 +4,14 @@
     background-size: cover;
   }
 
+.addBookNav{
+    background-color: black;
+    justify-content: right;
+}
+
+.button{
+    justify-content: left;
+}
 
 .carousel{
     position: relative;

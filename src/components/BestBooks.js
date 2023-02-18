@@ -3,6 +3,8 @@ import axios from 'axios';
 import Carousel from 'react-bootstrap/Carousel';
 import './BestBooks.css';
 import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button';
+import BookModal from './BookModal.js'
 
 
 // import ListGroup from 'react-bootstrap/ListGroup';
@@ -15,6 +17,7 @@ class BestBooks extends React.Component {
             books: [],
             error: false,
             errorMessage: '',
+            showModal: false,
         };
     }
 
@@ -39,7 +42,14 @@ class BestBooks extends React.Component {
 
     componentDidMount() {
         this.getBooks();
+    } 
+    handleclick= (e) => {
+           // e.preventDefault();
+            console.log('The link was clicked.');
+        this.setState({showModal:!this.state.showModal});
     }
+
+    handleClose = () => this.setState({showModal:false});
 
     render() {
 
@@ -48,7 +58,9 @@ class BestBooks extends React.Component {
         let books = this.state.books.map((book) => (
 
             <Carousel.Item key={book._id}>
+            <div className='addBookNav'>
 
+            </div>
                 <img
                     className="d-block w-100"
                     src={require('../img/books-5937823_640.jpg')}
@@ -64,7 +76,12 @@ class BestBooks extends React.Component {
 
 
         return (
+            
             <>
+            <div className='addBookNav'>
+            <Button variant="secondary" onClick={this.handleclick} >Add a Book</Button>{' '}
+            </div>
+            {(this.state.showModal) && <BookModal Show={this.state.showModal} />}
 <div className='libraryMain'>
                     {(this.state.error) &&
                         <Alert key='info' variant='info' show="true" transition="false" >The book collection is empty {this.state.errorMessage} </Alert>
@@ -90,3 +107,5 @@ class BestBooks extends React.Component {
 
 
 export default BestBooks;
+
+
