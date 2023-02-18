@@ -43,13 +43,11 @@ class BestBooks extends React.Component {
     componentDidMount() {
         this.getBooks();
     } 
-    handleclick= (e) => {
+    handelDisplayAddModal= () => {
            // e.preventDefault();
             console.log('The link was clicked.');
         this.setState({showModal:!this.state.showModal});
     }
-
-    handleClose = () => this.setState({showModal:false});
 
     render() {
 
@@ -79,9 +77,15 @@ class BestBooks extends React.Component {
             
             <>
             <div className='addBookNav'>
-            <Button variant="secondary" onClick={this.handleclick} >Add a Book</Button>{' '}
+            <Button variant="secondary" onClick={this.handelDisplayAddModal} >Add a Book</Button>{' '}
             </div>
-            {(this.state.showModal) && <BookModal Show={this.state.showModal} />}
+            {(this.state.showModal) && 
+            <BookModal 
+            show={this.state.showModal}
+            handelAddModal={this.handelAddModal}
+            handelDisplayAddModal={this.handelDisplayAddModal}
+
+            />}
 <div className='libraryMain'>
                     {(this.state.error) &&
                         <Alert key='info' variant='info' show="true" transition="false" >The book collection is empty {this.state.errorMessage} </Alert>
@@ -107,5 +111,4 @@ class BestBooks extends React.Component {
 
 
 export default BestBooks;
-
 
