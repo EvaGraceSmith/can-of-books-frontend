@@ -82,7 +82,7 @@ class BestBooks extends React.Component {
             {(this.state.showModal) && 
             <BookModal 
             show={this.state.showModal}
-            handelAddModal={this.handelAddModal}
+            getBooks={this.getBooks}
             handelDisplayAddModal={this.handelDisplayAddModal}
 
             />}
