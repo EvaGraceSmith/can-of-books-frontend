@@ -7,7 +7,6 @@ import Button from 'react-bootstrap/Button';
 import BookModal from './BookModal.js'
 
 
-// import ListGroup from 'react-bootstrap/ListGroup';
 let SERVER = process.env.REACT_APP_SERVER;
 
 class BestBooks extends React.Component {
@@ -22,7 +21,6 @@ class BestBooks extends React.Component {
     }
 
     getBooks = async () => {
-        //console.log(SERVER);
         try {
             let results = await axios.get(`${SERVER}/books`);
             console.log('do we have books', results);
@@ -35,18 +33,17 @@ class BestBooks extends React.Component {
             this.setState({
                 error: true,
                 errorMessage: `The book collection is empty: ${error.response.status}`,
-              });
-              console.error(error);
+            });
+            console.error(error);
         }
     };
 
     componentDidMount() {
         this.getBooks();
-    } 
-    handelDisplayAddModal= () => {
-           // e.preventDefault();
-            console.log('The link was clicked.');
-        this.setState({showModal:!this.state.showModal});
+    }
+    handelDisplayAddModal = () => {
+        console.log('The link was clicked.');
+        this.setState({ showModal: !this.state.showModal });
     }
 
     render() {
@@ -56,9 +53,8 @@ class BestBooks extends React.Component {
         let books = this.state.books.map((book) => (
 
             <Carousel.Item key={book._id}>
-            <div className='addBookNav'>
-
-            </div>
+                <div className='addBookNav'>
+                </div>
                 <img
                     className="d-block w-100"
                     src={require('../img/books-5937823_640.jpg')}
@@ -74,32 +70,31 @@ class BestBooks extends React.Component {
 
 
         return (
-            
-            <>
-            <div className='addBookNav'>
-            <Button variant="secondary" onClick={this.handelDisplayAddModal} >Add a Book</Button>{' '}
-            </div>
-            {(this.state.showModal) && 
-            <BookModal 
-            show={this.state.showModal}
-            getBooks={this.getBooks}
-            handelDisplayAddModal={this.handelDisplayAddModal}
 
-            />}
-<div className='libraryMain'>
+            <>
+                <div className='addBookNav'>
+                    <Button variant="secondary" onClick={this.handelDisplayAddModal} >Add a Book</Button>{' '}
+                </div>
+                {(this.state.showModal) &&
+                    <BookModal
+                        show={this.state.showModal}
+                        getBooks={this.getBooks}
+                        handelDisplayAddModal={this.handelDisplayAddModal}
+                    />}
+                <div className='libraryMain'>
                     {(this.state.error) &&
                         <Alert key='info' variant='info' show="true" transition="false" >The book collection is empty {this.state.errorMessage} </Alert>
-                      }
+                    }
                     {this.state.books.length > 0 &&
-                    <>
-                        <Carousel fade
-                        variant="dark"
-                            className="carousel">
-                            {books}
-                        </Carousel>
-                    </>
-    }
-</div>
+                        <>
+                            <Carousel fade
+                                variant="dark"
+                                className="carousel">
+                                {books}
+                            </Carousel>
+                        </>
+                    }
+                </div>
             </>
         );
     }
