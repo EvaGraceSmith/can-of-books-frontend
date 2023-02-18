@@ -38,9 +38,32 @@ class BestBooks extends React.Component {
         }
     };
 
+    handleDeleteBook = async (id) => {
+        try {
+             await axios.delete(`${SERVER}/books/${id}`);
+
+
+        } catch (error) {
+            console.log('empty book collection: ', error.response.data);
+            this.setState({
+                error: true,
+                errorMessage: `The book collection is empty: ${error.response.status}`,
+            });
+            console.error(error);
+        }
+    };
+
     componentDidMount() {
         this.getBooks();
     }
+
+    componentDidUpdate(previousProps, previousState){
+        if (this.state.showModal !== previousState.showModal){
+
+        this.getBooks();}
+    }
+
+
     handelDisplayAddModal = () => {
         console.log('The link was clicked.');
         this.setState({ showModal: !this.state.showModal });
@@ -60,9 +83,17 @@ class BestBooks extends React.Component {
                     src={require('../img/books-5937823_640.jpg')}
                     alt="First slide"
                 />
+                
                 <Carousel.Caption>
+                    <div className='bookInfo'>
                     <h3>{book.title}</h3>
+                    {book.image ? 
+                    <img src={book.image} alt={book.title}/> :
+                    <img src={require('../img/books-2695011_640.png')} alt={book.title}/>}
                     <p>{book.description}</p>
+                    <button id="updateBook" type="">Update</button>
+                    <button onClick={()=>this.handleDeleteBook(book._id)} id="deleteBook" type="">Delete</button>
+                    </div>
                 </Carousel.Caption>
 
             </Carousel.Item>
