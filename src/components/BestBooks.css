@@ -1,10 +1,26 @@
-main {
-    background-image: url('../img/dublin-2344423_1920.jpg');
+.libraryMain {
+    /* background-image: url('../img/dublin-2344423_1920.jpg'); */
+    background-image: url('../img/canada-1578634_1920.jpg');
+    background-size: cover;
   }
 
+.addBookNav{
+    background-color: black;
+    justify-content: right;
+}
+
+.button{
+    justify-content: left;
+}
 
 .carousel{
+    position: relative;
+    margin: auto;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     color: black;
+    width: 65vh;
+
 }
 
 h3{

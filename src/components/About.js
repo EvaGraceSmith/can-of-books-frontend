@@ -1,8 +1,5 @@
 import React from 'react';
-// import axios from 'axios';
-// import Carousel from 'react-bootstrap/Carousel';
 import './About.css';
-import Header from './Header.js';
 import Card from 'react-bootstrap/Card';
 
 class Profile extends React.Component {
@@ -17,9 +14,7 @@ class Profile extends React.Component {
     render() {
         return (
             <>
-                {/* <a href='/'>Home</a> */}
                 <main>
-                    <Header />
 
                     <Card style={{ width: '18rem' }}>
                         <Card.Body>
