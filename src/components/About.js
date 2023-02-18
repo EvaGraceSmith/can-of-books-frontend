@@ -19,7 +19,7 @@ class Profile extends React.Component {
             <>
                 {/* <a href='/'>Home</a> */}
                 <main>
-                    <Header />
+                    {/* <Header /> */}
 
                     <Card style={{ width: '18rem' }}>
                         <Card.Body>

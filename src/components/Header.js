@@ -9,7 +9,7 @@ class Header extends React.Component {
     render() {
         return (
 
-            <Navbar bg="dark" variant="dark">
+            <Navbar bg="light" variant="light">
                 <Container>
                     <img
                         src={require('../img/pngaaa.com-1220636.png')}
@@ -22,6 +22,7 @@ class Header extends React.Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Nav className="me-auto">
                         <Nav.Link href='/'>Home</Nav.Link>
+                        <Nav.Link href='/books'>Library</Nav.Link>
                         <Nav.Link href='/about'>About Us</Nav.Link>
                     </Nav>
 
