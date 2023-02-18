@@ -7,19 +7,38 @@ import About from './components/About.js';
 import {
   createBrowserRouter,
   RouterProvider,
+  createRoutesFromElements,
+  Route
 } from "react-router-dom";
+import BestBooks from './components/BestBooks.js';
+import Error from './components/Error.js';
+import Home from './components/Home.js';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App/>,
-  },
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={ <App /> } errorElement={ <Error /> }>
+      <Route path="/" element={ <Home /> } />
+      <Route path="/books" element={ <BestBooks /> } />
+      <Route path="/about" element={ <About /> } />
+    </Route>
+  )
+);
 
-  {
-    path: "/about",
-    element: <About/>,
-  },
-]);
+
+
+
+
+// const router = createBrowserRouter([
+//   {
+//     path: '/',
+//     element: <App/>,
+//   },
+
+//   {
+//     path: "/about",
+//     element: <About/>,
+//   },
+// ]);
 
 
 

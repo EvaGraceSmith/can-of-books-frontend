@@ -4,9 +4,11 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
-import BestBooks from './components/BestBooks.js';
-import { Routes, Route } from 'react-router-dom';
-import About from './components/About.js';
+// import BestBooks from './components/BestBooks.js';
+// import { Routes, Route } from 'react-router-dom';
+// import About from './components/About.js';
+import { Outlet } from "react-router-dom";
+
 
 
 
@@ -21,17 +23,23 @@ class App extends React.Component {
   render() {
     return (
       <>
+
+<Header />
+        <Outlet />
+
+        <Footer />
+
         {/* <Router> */}
           {/* <Header /> */}
-          <Routes>
+          {/* <Routes>
             <Route path='/' element={<Header />}>
               <Route index element={<App />} />
               <Route path="about" element={<About />} />
             </Route>
           </Routes>
 
-          <BestBooks />
-          <Footer />
+          <BestBooks /> */}
+
         {/* </Router> */}
       </>
     );
