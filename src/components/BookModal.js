@@ -62,14 +62,14 @@ class BookModal extends React.Component {
             console.log('POST', bookToPost);
             const reqBody = {
                 title: bookToPost.title,
-                // author: bookToPost.author,
+                author: bookToPost.author,
+                image: bookToPost.image,
                 description: bookToPost.description,
-                // image: bookToPost.image,
-                status: "new",
+                status: true,
             };
             console.log('POST reqBody', reqBody);
             axios
-                .post(`${process.env.REACT_APP_SERVER}`, reqBody)
+                .post(`${process.env.REACT_APP_SERVER}/books`, reqBody)
                 .then(console.log("post success??"))
                 .catch((error) => console.log('post error' + error));
 
@@ -81,7 +81,7 @@ class BookModal extends React.Component {
         //console.log('in bookmodal'+ this.props.handleShow);
         const postedBook =
             <div id="addedBook">
-                <h3>Here is the book you have selected to add:!</h3>
+                <h3>Book to add:</h3>
                 {this.state.bookToPost.title}<br />
                 {this.state.bookToPost.author}<br />
                 <img src={this.state.bookToPost.image} alt={this.state.bookToPost.title} /><br />
