@@ -6,7 +6,18 @@
 
 .addBookNav {
     background-color: black;
+    color: white;
+    padding: 10px;
     justify-content: right;
+}
+
+.bookStatus{
+    margin-left: 60%;
+}
+
+.checkbox{
+    padding-right: 20px;
+    margin-right: 20px;
 }
 
 .button {
@@ -22,6 +33,17 @@
     width: 65vh;
 
 }
+
+/* .addBookNav{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+
+
+align-items: center;
+    justify-content: right;
+} */
+
 
 #root .bookInfo {
     max-width: 300px;
