@@ -4,7 +4,7 @@
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
-This is the backend for the can of books project.  It will connect to our backend, which can be found here: [https://github.com/Chris-Vander-Linden/can-of-books-backend](https://github.com/Chris-Vander-Linden/can-of-books-backend)
+This is the frontend for the can of books project.  It will connect to our backend, which can be found here: [https://github.com/Chris-Vander-Linden/can-of-books-backend](https://github.com/Chris-Vander-Linden/can-of-books-backend)
 
 ## Getting Started
     git clone git@github.com:EvaGraceSmith/can-of-books-frontend.git
