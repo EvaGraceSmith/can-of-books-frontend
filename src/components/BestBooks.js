@@ -52,7 +52,8 @@ class BestBooks extends React.Component {
             };
             console.log('PUT reqBody', reqBody);
 
-             await axios.put(`${SERVER}/books/${bookToPut.id}`, reqBody);
+             let status =await axios.put(`${SERVER}/books/${bookToPut._id}`, reqBody);
+             console.log('status' + status);
 
             } catch (error) {
                 console.log('empty book collection: ', error.response.data);
@@ -103,9 +104,9 @@ class BestBooks extends React.Component {
 
             <Carousel.Item key={book._id}>
                 <div className='addBookNav'>
-                <span className='bookStatus'>Book Read?</span>  <input className='checkbox' type="checkbox"  checked={book.status}
-                onChange={()=>this.handleUpdateBook(book)}
-                id="updateBook"></input>
+                <span className='bookStatus'>Book Read?  <input type="checkbox"  checked={book.status}
+                onClick={()=>this.handleUpdateBook(book)}
+                id="updateBook"></input></span>
                     <Button onClick={()=>this.handleDeleteBook(book._id)} id="deleteBook" variant="secondary" type="">Delete</Button>
 
                 </div>
