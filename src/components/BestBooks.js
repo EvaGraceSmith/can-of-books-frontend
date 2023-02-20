@@ -38,6 +38,33 @@ class BestBooks extends React.Component {
         }
     };
 
+    handleUpdateBook = async (bookToPut) => {
+        try {
+
+            bookToPut.status=!bookToPut.status
+            const reqBody = {
+                _id: bookToPut._id,
+                title: bookToPut.title,
+                author: bookToPut.author,
+                image: bookToPut.image,
+                description: bookToPut.description,
+                status: bookToPut.status,
+            };
+            console.log('PUT reqBody', reqBody);
+
+             let status =await axios.put(`${SERVER}/books/${bookToPut._id}`, reqBody);
+             console.log('status' + status);
+
+            } catch (error) {
+                console.log('empty book collection: ', error.response.data);
+                this.setState({
+                    error: true,
+                    errorMessage: `The book collection is empty: ${error.response.status}`,
+                });
+                console.error(error);
+            }
+        };
+
     handleDeleteBook = async (id) => {
         try {
              await axios.delete(`${SERVER}/books/${id}`);
@@ -77,6 +104,11 @@ class BestBooks extends React.Component {
 
             <Carousel.Item key={book._id}>
                 <div className='addBookNav'>
+                <span className='bookStatus'>Book Read?  <input type="checkbox"  checked={book.status}
+                onClick={()=>this.handleUpdateBook(book)}
+                id="updateBook"></input></span>
+                    <Button onClick={()=>this.handleDeleteBook(book._id)} id="deleteBook" variant="secondary" type="">Delete</Button>
+
                 </div>
                 <img
                     className="d-block w-100"
@@ -91,10 +123,12 @@ class BestBooks extends React.Component {
                     <img src={book.image} alt={book.title}/> :
                     <img src={require('../img/books-2695011_640.png')} alt={book.title}/>}
                     <p>{book.description}</p>
-                    <button id="updateBook" type="">Update</button>
-                    <button onClick={()=>this.handleDeleteBook(book._id)} id="deleteBook" type="">Delete</button>
+
                     </div>
+
+
                 </Carousel.Caption>
+
 
             </Carousel.Item>
         ));
