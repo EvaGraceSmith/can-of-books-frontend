@@ -1,10 +1,11 @@
 # Project Name
 
 **Authors**: Eva Grace Smith and Chris Vander Linden
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Version**: 1.0.0 
+<!-- (increment the patch/fix version number if you make more commits past your first submission) -->
 
 ## Overview
-This is the frontend for the can of books project.  It will connect to our backend, which can be found here: [https://github.com/Chris-Vander-Linden/can-of-books-backend](https://github.com/Chris-Vander-Linden/can-of-books-backend)
+This is the frontend for the can of books project.  It connects to our backend, which can be found here: [https://github.com/Chris-Vander-Linden/can-of-books-backend](https://github.com/Chris-Vander-Linden/can-of-books-backend)
 
 ## Getting Started
     git clone git@github.com:EvaGraceSmith/can-of-books-frontend.git
@@ -20,9 +21,9 @@ This project uses React, node.js, express.js, mongo.DB, mongoose, cors, Google B
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
-2-18-23 8:00am Add Book function working
-2-18-23 5:00pm Delete button is now functioning
-2-19-23 9:00pm Update Read status is now functioning
+* 2-18-23 8:00am Add Book function now working
+* 2-18-23 5:00pm Delete button is now functioning
+* 2-19-23 9:00pm Update Read status is now functioning
 
 ## Estimates
 Name of feature: __________Lab 11- Carousel______________________
@@ -56,12 +57,15 @@ Finish time: _____
 Actual time needed to complete: _____
 
 
-Lab 11
+#### Lab 11
+
 [React Router](https://www.w3schools.com/react/react_router.asp)
+
 [Intro to React Router](https://medium.com/@ipenywis/intro-to-react-router-for-beginners-multiple-page-apps-461f4729bd3f#:~:text=For%20a%20website%20or%20a%20simple%20multi-page%20app%2C,redirect%20from%20route%20to%20another%20and%20404%20pages.)
 
 
-Lab 12
+#### Lab 12
+
 Name of feature: _Add Modal_______________________________
 
 Estimate of time needed to complete: __1hr___
@@ -72,7 +76,7 @@ Finish time: _12pm____
 
 Actual time needed to complete: __6___
 
-Name of feature: _____Add book Button___________________________
+Name of feature: _____Add a Book Button___________________________
 
 Estimate of time needed to complete: __3hrs___
 
@@ -82,7 +86,7 @@ Finish time: __3_pm__
 
 Actual time needed to complete: __3___
 
-Name of feature: __Add Delete______________________________
+Name of feature: __Add Delete_Functionality_____________________________
 
 Estimate of time needed to complete: _1 hr____
 
@@ -94,7 +98,7 @@ Actual time needed to complete: __1___
 
 Lab 13
 
-Name of feature: __________Update checkbox Feature______________________
+Name of feature: __________Update Book Read checkbox Feature______________________
 
 Estimate of time needed to complete: __1 hr___
 
@@ -104,8 +108,9 @@ Finish time: __9pm___
 
 Actual time needed to complete: __2 hrs___
 
-[checkboxes](https://stackoverflow.com/questions/53498299/how-to-send-checkbox-data-in-reactjs)
-[checkboxes](https://www.w3schools.com/jsref/prop_checkbox_checked.asp)
+[Checkboxes in react](https://stackoverflow.com/questions/53498299/how-to-send-checkbox-data-in-reactjs)
+
+[Checkboxes](https://www.w3schools.com/jsref/prop_checkbox_checked.asp)
 
 ## Credit and Collaborations
 
