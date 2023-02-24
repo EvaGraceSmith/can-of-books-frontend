@@ -126,8 +126,8 @@ class BookModal extends React.Component {
                         </div>
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button variant="secondary" onClick={this.props.handelDisplayAddModal}>
-                            Close
+                        <Button variant="success" onClick={this.props.handelDisplayAddModal}>
+                            Add Book
                         </Button>
                     </Modal.Footer>
                 </Modal>

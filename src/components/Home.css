@@ -4,3 +4,10 @@ main {
 
     height: 83vh;
   }
+
+  h2 {
+    padding-top: 1rem;
+    color: rgb(193, 206, 246);
+    font-size: 1.25rem;
+    text-align: center;
+  }
