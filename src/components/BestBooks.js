@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import BookModal from './BookModal.js'
 
 
+
 let SERVER = process.env.REACT_APP_SERVER;
 
 class BestBooks extends React.Component {
@@ -125,6 +126,7 @@ class BestBooks extends React.Component {
                     <p>{book.description}</p>
 
                     </div>
+                    
 
 
                 </Carousel.Caption>

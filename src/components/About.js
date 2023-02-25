@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 import EvaGrace from '../img/EvaGrace.jpeg'
 import Chris from '../img/ChrisVanderLinden.png'
-import Card from 'react-bootstrap/Card';
+// import Card from 'react-bootstrap/Card';
 
 class Profile extends React.Component {
     constructor(props) {
@@ -73,7 +73,7 @@ class Profile extends React.Component {
 export default Profile;
 
 
-{/* <Card style={{ width: '18rem' }}>
+/* <Card style={{ width: '18rem' }}>
 <Card.Body>
     <Card.Title>Chris Vander Linden</Card.Title>
     <Card.Subtitle className="mb-2 text-muted">Full Stack Software Developer</Card.Subtitle>
@@ -96,4 +96,4 @@ export default Profile;
     <Card.Link href="https://github.com/EvaGraceSmith">Github</Card.Link>
 </Card.Body>
 </Card>
-<h1>About Us</h1> */}
+<h1>About Us</h1> */
