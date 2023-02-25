@@ -1,12 +1,11 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import { Container} from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import AuthButtons from './AuthButtons.js'
-import { Auth0Provider } from '@auth0/auth0-react';
 class Header extends React.Component {
     render() {
         return (
-            <Auth0Provider>
+
             <Navbar bg="light" variant="light">
                 <Container>
                     <img
@@ -27,7 +26,6 @@ class Header extends React.Component {
 
                 </Container>
             </Navbar >
-            </Auth0Provider>
         );
     }
 }
