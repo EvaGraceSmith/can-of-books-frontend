@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import BookModal from './BookModal.js'
 
 
+
 let SERVER = process.env.REACT_APP_SERVER;
 
 class BestBooks extends React.Component {
@@ -67,8 +68,9 @@ class BestBooks extends React.Component {
 
     handleDeleteBook = async (id) => {
         try {
-             await axios.delete(`${SERVER}/books/${id}`);
-
+            console.log('handleDeleteBook: ', id);
+            let returndelete = await axios.delete(`${SERVER}/books/${id}`);
+            console.log(returndelete);
 
         } catch (error) {
             console.log('empty book collection: ', error.response.data);
@@ -125,6 +127,7 @@ class BestBooks extends React.Component {
                     <p>{book.description}</p>
 
                     </div>
+                    
 
 
                 </Carousel.Caption>

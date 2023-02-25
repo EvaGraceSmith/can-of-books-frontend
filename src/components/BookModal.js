@@ -109,16 +109,20 @@ class BookModal extends React.Component {
                                     placeholder="Keyword"
                                     autoFocus
                                 />
+                                <br></br>
+                                                            <Button variant="primary"
+                                type='submit'>
+                                Search
+                            </Button>
                             </Form.Group>
+
                             <Form.Label>Choose a Book</Form.Label>
+
                             <Form.Select aria-label="Default select example"
                                 onChange={this.handleBookSearchSelect}>
                                 {searchResults}
                             </Form.Select>
-                            <Button variant="primary"
-                                type='submit'>
-                                Search
-                            </Button>
+
                         </Form>
 
                         <div>
