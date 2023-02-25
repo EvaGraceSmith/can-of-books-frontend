@@ -1,3 +1,8 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+
+
 .aboutUs{
     background-image: url('../img/valdemaras-d-CJAVJ5SF6gA-unsplash.jpg');
     background-size: cover;
@@ -20,8 +25,8 @@ body {
   
   .flip-card {
     background-color: transparent;
-    width:70vh;
-    height: 70vh;
+    width:40vw;
+    height: 50vw;
     perspective: 1000px;
   }
   
@@ -56,29 +61,44 @@ body {
   
   .flip-card-back {
     /* background-color: #2980b9; */
-    background-color: rgba(249, 248, 248, 0.5);
+    background-color: rgba(249, 248, 248, 0.8);
     color: rgb(1, 1, 1);
     transform: rotateY(180deg);
     border-radius: 10px;
   }
-
+  .photoCard{
+height: 150%;
+padding-top: 10%;
+    
+  }
   .photoImage{
-    /* position: relative; */
+    position: relative;
     margin: auto;
     object-fit: contain;
-    height: 100%;
-    padding: 10%;
+    height: 50%;
+    padding: 5%;
     border-radius: 30px;
   }
 
   .textBox{
     display: flex;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding-top: 15%;
+    padding-top: 25%;
     padding-bottom: 10%;
     padding-left: 15%;
     padding-right: 15%;
+  }
+
+  h1{
+    background-color: rgba(249, 248, 248, 0.8);
+    font-family: 'Dosis', sans-serif;
+  }
+
+  p{
+    background-color: rgba(249, 248, 248, 0.8);
+    font-family: 'Dosis', sans-serif;
   }

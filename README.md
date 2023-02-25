@@ -27,7 +27,7 @@ This project uses React, node.js, express.js, mongo.DB, mongoose, cors, Google B
 * 2-24-23 11:00pm OAuth added to front end
 
 ### ![DomainModel](./canofBooksDomainModel.jpg)
-### ![Web Request Response Cycle](./canOfBookWRRC.svg)
+### ![Web Request Response Cycle](./canOfBookWRRC.png)
 
 
 ## Estimates
