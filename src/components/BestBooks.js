@@ -68,8 +68,9 @@ class BestBooks extends React.Component {
 
     handleDeleteBook = async (id) => {
         try {
-             await axios.delete(`${SERVER}/books/${id}`);
-
+            console.log('handleDeleteBook: ', id);
+            let returndelete = await axios.delete(`${SERVER}/books/${id}`);
+            console.log(returndelete);
 
         } catch (error) {
             console.log('empty book collection: ', error.response.data);
