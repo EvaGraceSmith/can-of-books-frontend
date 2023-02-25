@@ -119,6 +119,23 @@ Actual time needed to complete: __2 hrs___
 
 [Checkboxes](https://www.w3schools.com/jsref/prop_checkbox_checked.asp)
 
+### Lab 14
+
+Name of feature: ________OAuth________________________
+
+Estimate of time needed to complete: ___1hr__
+
+Start time: __8:00pm___
+
+Finish time: ___9:00pm__
+
+Actual time needed to complete: __1hr___
+
+[provided OAuth Code](https://github.com/DeltaVCode/cedarrapids-code-301n1/tree/main/class-15/lab/starter-code/client/Auth)
+
+[auth0](https://auth0.com/docs/libraries/auth0-react)
+
+
 ## Credit and Collaborations
 
 Image by <a href="https://pixabay.com/users/hermann-130146/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5937823">Hermann Traub</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5937823">Pixabay</a>
