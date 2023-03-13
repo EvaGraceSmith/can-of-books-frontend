@@ -1,6 +1,7 @@
 main {
     background-image: url('../img/washington-dc-1624410_1920.jpg');
     background-size: cover;
+    background-position: center, center;
 
     height: 83vh;
   }
