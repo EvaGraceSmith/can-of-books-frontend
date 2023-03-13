@@ -4,6 +4,8 @@
 **Version**: 1.0.0 
 <!-- (increment the patch/fix version number if you make more commits past your first submission) -->
 
+[Our site can be viewed here:](https://thebookcollection.netlify.app/)
+
 ## Overview
 This is the frontend for the can of books project.  It connects to our backend, which can be found here: [https://github.com/Chris-Vander-Linden/can-of-books-backend](https://github.com/Chris-Vander-Linden/can-of-books-backend)
 
