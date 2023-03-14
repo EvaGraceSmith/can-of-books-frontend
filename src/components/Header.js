@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
-import AuthButtons from './AuthButtons.js'
+// import AuthButtons from './AuthButtons.js'
 class Header extends React.Component {
     render() {
         return (
@@ -21,7 +21,7 @@ class Header extends React.Component {
                         <Nav.Link href='/'>Home</Nav.Link>
                         <Nav.Link href='/books'>Library</Nav.Link>
                         <Nav.Link href='/about'>About Us</Nav.Link>
-                        <AuthButtons/>
+                        {/* <AuthButtons/> */}
                     </Nav>
 
                 </Container>

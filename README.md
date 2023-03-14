@@ -4,6 +4,8 @@
 **Version**: 1.0.0 
 <!-- (increment the patch/fix version number if you make more commits past your first submission) -->
 
+[Our site can be viewed here:](https://thebookcollection.netlify.app/)
+
 ## Overview
 This is the frontend for the can of books project.  It connects to our backend, which can be found here: [https://github.com/Chris-Vander-Linden/can-of-books-backend](https://github.com/Chris-Vander-Linden/can-of-books-backend)
 
@@ -137,6 +139,8 @@ Actual time needed to complete: __1hr___
 
 
 ## Credit and Collaborations
+
+[How to customize Bootstrap](https://react-bootstrap.github.io/getting-started/theming/#new-variants-and-sizes)
 
 Image by <a href="https://pixabay.com/users/hermann-130146/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5937823">Hermann Traub</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5937823">Pixabay</a>
 Image by <a href="https://pixabay.com/users/skitterphoto-324082/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2344423">Rudy and Peter Skitterians</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2344423">Pixabay</a>
