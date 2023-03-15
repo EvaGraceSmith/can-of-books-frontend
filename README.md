@@ -14,6 +14,8 @@ This is the frontend for the can of books project.  It connects to our backend, 
 
     npx create-react-app
 
+    npm i
+
     npm start
 
 ## Architecture
@@ -155,4 +157,3 @@ Photo by <a href="https://unsplash.com/@deko_photo4?utm_source=unsplash&utm_medi
 
 [Chris Vander Linden](https://github.com/Chris-Vander-Linden): Collaborator and code reviewer
 [Jack Stubblefield](https://github.com/Jacks-01): DeltaV TA
-[Craig Barkley](https://github.com/tektechnologies): DeltaV course instructor
