@@ -19,7 +19,7 @@ This is the frontend for the can of books project.  It connects to our backend, 
     npm start
 
 ## Architecture
-This project uses React, node.js, express.js, mongo.DB, mongoose, cors, Google Books API
+This project uses React, Node.js, Express.js, Mongo.DB, Mongoose, Cors, Google Books API
 
 ## Change Log
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
@@ -34,7 +34,7 @@ This project uses React, node.js, express.js, mongo.DB, mongoose, cors, Google B
 ### ![Web Request Response Cycle](./canOfBookWRRC.png)
 
 
-## Estimates
+<!-- ## Estimates
 Name of feature: __________Lab 11- Carousel______________________
 
 Estimate of time needed to complete: ___3 hrs__
@@ -63,7 +63,7 @@ Start time: _____
 
 Finish time: _____
 
-Actual time needed to complete: _____
+Actual time needed to complete: _____ -->
 
 
 #### Lab 11
@@ -75,7 +75,7 @@ Actual time needed to complete: _____
 
 #### Lab 12
 
-Name of feature: _Add Modal_______________________________
+<!-- Name of feature: _Add Modal_______________________________
 
 Estimate of time needed to complete: __1hr___
 
@@ -103,13 +103,13 @@ Start time: __4pm___
 
 Finish time: __5pm___
 
-Actual time needed to complete: __1___
+Actual time needed to complete: __1___ -->
 
 [Flip Card](https://www.w3schools.com/howto/howto_css_flip_card.asp)
 
 ### Lab 13
 
-Name of feature: __________Update Book Read checkbox Feature______________________
+<!-- Name of feature: __________Update Book Read checkbox Feature______________________
 
 Estimate of time needed to complete: __1 hr___
 
@@ -117,14 +117,14 @@ Start time: __7pm___
 
 Finish time: __9pm___
 
-Actual time needed to complete: __2 hrs___
+Actual time needed to complete: __2 hrs___ -->
 
 [Checkboxes in react](https://stackoverflow.com/questions/53498299/how-to-send-checkbox-data-in-reactjs)
 
 [Checkboxes](https://www.w3schools.com/jsref/prop_checkbox_checked.asp)
 
 ### Lab 14
-
+<!-- 
 Name of feature: ________OAuth________________________
 
 Estimate of time needed to complete: ___1hr__
@@ -133,7 +133,7 @@ Start time: __8:00pm___
 
 Finish time: ___9:00pm__
 
-Actual time needed to complete: __1hr___
+Actual time needed to complete: __1hr___ -->
 
 [provided OAuth Code](https://github.com/DeltaVCode/cedarrapids-code-301n1/tree/main/class-15/lab/starter-code/client/Auth)
 
@@ -157,3 +157,4 @@ Photo by <a href="https://unsplash.com/@deko_photo4?utm_source=unsplash&utm_medi
 
 [Chris Vander Linden](https://github.com/Chris-Vander-Linden): Collaborator and code reviewer
 [Jack Stubblefield](https://github.com/Jacks-01): DeltaV TA
+[Mark Smith](https://github.com/markmrsmith): Tutor
